@@ -212,3 +212,257 @@ color: rgb(117, 65, 72, 0.5);
     font-size: 30px;
     font-style: italic;
 }
+
+/* ************ Debut page images ************* */
+.imageFond{
+    background: black url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imageFond p{
+    width: 75%;
+    margin: 100px auto 200px auto;
+    background-color: rgba(255, 255, 255, 0.60);
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
+
+figure{
+    margin: auto;
+    width: 250px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+figcaption{
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-style: oblique;
+}
+
+.rotationImg{
+    text-align: center;
+}
+
+.image{
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+
+.image:hover{
+    transform: rotate(-7deg);
+    border: 15px solid #eee;
+}
+
+.rotation360:hover{
+    transform: rotate(-360deg);
+}
+
+/* ************ Debut page positions ************* */
+/* ABSOLUTE */
+.centre{
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    background-color: pink;
+}
+
+.absolute{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    background: plum;
+    width: 100px;
+    height: 100px;
+}
+
+/* RELATIVE */
+.relative{
+    background-color: purple;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+.relative div{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+
+/* ************ BOUTON RETOUR EN HAUT FIXED ************* */
+button{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 350%;
+    color: purple;
+}
+
+/* ************ POURCENTAGE ************* */
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background-color: violet;
+    color: black;
+    font-weight: bold;
+}
+
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background-color: rgb(236, 181, 236);
+    color: rgb(41, 40, 40);
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.cent{
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background-color: rgb(70, 58, 70);
+    color: rgb(124, 91, 91);
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+/* ************ FLOAT ************* */
+.float{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    background-color: pink;
+    border: 2px ridge rgb(77, 8, 77);
+}
+
+.dernier{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(77, 8, 77);
+    border: 2px ridge pink;
+
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+/* ************ Exercice sur le float ************* */
+.zone{
+    height: 60px;
+    background-color: gray;
+}
+
+.zone1{
+    height: 250px;
+    width: 25%;
+    background-color: pink;
+    float: left;
+}
+.zone2{
+    height: 250px;
+    width: 25%;
+    background-color: rgb(61, 29, 34);
+    float: left;
+}
+.zone3{
+    height: 250px;
+    width: 25%;
+    background-color: rgb(236, 47, 79);
+    float: left;
+}
+.zone4{
+    height: 250px;
+    width: 25%;
+    background-color: rgb(83, 67, 70);
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+ 
+/* ************ Fin Exercice sur le float ************* */
+
+
+
+/* ************ Exercice FLEX ************* */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex div{
+    width: 15%;
+    height: 130px;
+    border: 7px outset violet;
+    /* border-right: 7px solid rgb(110, 23, 110);
+    border-bottom: 7px solid rgb(110, 23, 110);
+    border-left: 7px solid rgb(168, 78, 168);
+    border-top:7px solid rgb(168, 78, 168);*/
+    background-color: rgb(102, 50, 102);
+    text-align: center;
+    font-size: 20px;
+    color: wheat;
+}
+/* ************ Fin Exercice FLEX ************* */
+
+
+/* ************ TABLEAUX ************* */
+table{
+    border-collapse: collapse; /* pas d'écart entre les cellules */
+    border: 2px solid violet;
+    font-weight: bold;
+    margin : 20px auto;
+    width: 80%;
+}
+
+caption{
+    padding: 5px;
+}
+
+.tableau thead, .tableau tfoot{
+    background-color: wheat;
+    border: 1px solid violet;
+}
+
+.tableau tbody{
+    border: 1px dotted violet;
+}
+
+.tableau th{
+    border: 1px solid violet;
+    padding: 5px;
+    width: 20%;
+}
+
+.tableau td{
+    border: 1px solid violet;
+    font-size: 80%;
+    padding: 5%;
+    text-align: center;
+}
+

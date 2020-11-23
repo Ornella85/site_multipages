@@ -7,7 +7,7 @@
     <meta name="description" content="Structure type du site, la page d'accueil">
     <!-- Description sous le titre dans la recherche google => Référecement -->
 
-    <title>Site MultiPages</title>
+    <title>Ma page Tableau</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /><!-- lien qui permet d'utiliser font awsome via le cdnjs -->
 
@@ -28,7 +28,7 @@
                     <img src="img/mon1ersite_logo1.png" alt="logo HTML">
             </div>
             <div id="slogan">
-                    <h1>Mon premier site en HTML/CSS</h1>
+                    <h1>Les Tableaux en HTML/CSS</h1>
             </div>
             <div id="social">
                 <a href="http://www.instagram.com" target="_blank"> 
@@ -42,13 +42,13 @@
           </header>
           <nav><!-- zone de menu, les liens pour naviguer sur le site-->
              <div class="ancreNav">
-                 <a href="index.html" class="activ">Structure</a>
+                 <a href="index.html">Structure</a>
                  <a href="textes.html">Textes</a>
                  <a href="selecteurs.html">Sélecteurs</a>
                  <a href="images.html">Images</a>
                  <a href="positions.html">Positions</a>
                  <a href="zoning.html">Zoning</a>
-                 <a href="tableau.html">Tableau</a>
+                 <a href="tableau.html" class="activ">Tableau</a>
                  <a href="listes.html">Listes</a>
                  <a href="liens_menu.html" >Liens & Menu</a>
                  <a href="formulaires.html" >Formulaires</a>
@@ -58,18 +58,56 @@
           </nav>
 
         <main><!-- Contenu principal-->
-            <aside><!-- Contenu secondaire-->
-                <section>
-                    <div> <!-- zone supplémantaire de contenu-->
-                    </div>
+           <!-- Titre et légende => figure , figcaption -->
+           <h2>Tableaux</h2>
 
-                    <span><!-- zone supplémantaire de contenu-->
-                    </span>
+           <table class="tableau">
+               <caption>Vols Paris Rome <i class="fas fa-plane-departure"></i></caption>
+               <thead>
+                   <tr>
+                       <th></th>
+                       <td>02/08/2021</td>
+                       <td>03/08/2021</td>
+                       <td>04/08/2021</td>
+                   </tr>
+               </thead>
 
-                    <article><!-- zone supplémantaire de contenu-->
-                    </article>
-            </section>
-            </aside>
+               <tfoot>
+                   <tr>
+                       <th></th>
+                       <td>02/08/2021</td>
+                       <td>03/08/2021</td>
+                       <td>04/08/2021</td>
+                   </tr>
+               </tfoot>
+
+               <tbody>
+                   <tr>
+                       <th rowspan="2">Air France</th>
+                       <td>Départ 10h - Arrivée 13h</td>
+                       <td>Départ 15h - Arrivée 18h</td>
+                       <td>Départ 17h - Arrivée 20h</td>
+                   </tr>
+
+                   <tr>
+                       <td>200€</td>
+                       <td>180€</td>
+                       <td>170€</td>
+                   </tr>
+
+                   <tr>
+                       <th rowspan="2"> Alitalia</th>
+                       <td>Départ 6h - Arrivée 9h</td>
+                       <td>Départ 13h - Arrivée 16h</td>
+                       <td>Départ 21h - Arrivée 00h</td>
+                   </tr>
+                   <tr>
+                    <td>120€</td>
+                    <td>250€</td>
+                    <td>100€</td>
+                </tr>
+               </tbody>
+           </table>
         </main>
 
         <footer>
